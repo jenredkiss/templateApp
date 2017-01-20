@@ -1,9 +1,16 @@
 # TemplateApp
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
+1. Install angular-cli
+command: npm install angular-cli -generate
+	
+2. Install all dependencies
+command: npm install
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+3. Build the app
+command: ng build
+
+4. Start the application
+command: npm start
 
 ## Code scaffolding
 
