@@ -1,15 +1,19 @@
 # TemplateApp
 
-1. Install angular-cli
+## 1. Install angular-cli
+
 command: npm install angular-cli -generate
 	
-2. Install all dependencies
+## 2. Install all dependencies
+
 command: npm install
 
-3. Build the app
+## 3. Build the app
+
 command: ng build
 
-4. Start the application
+## 4. Start the application
+
 command: npm start
 
 ## Code scaffolding
