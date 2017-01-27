@@ -7,11 +7,17 @@ declare var jQuery: any;
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  private username: String;
+  private password: String;
 
   constructor(private _elRef: ElementRef) { }
 
   ngOnInit() {
     jQuery(this._elRef.nativeElement).find('.modal').modal({dismissible: false});
+  }
+
+  onSubmit() {
+    
   }
 
 }

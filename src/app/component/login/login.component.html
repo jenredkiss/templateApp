@@ -4,16 +4,16 @@
       <h4>Login to Test</h4>
       <div class="center-align"><i class="material-icons" style="font-size: 120px;">person_pin</i></div>
       <div class="row">
-        <form class="container">
+        <form class="container" (ngSubmit)="onSubmit()">
           <div class="row">
             <div class="input-field col s12">
-              <input [(ngModel)]="uname" id="username" type="text" class="validate"  required>
+              <input [(ngModel)]="username" id="username" type="text" class="validate" name="first" required>
               <label for="username">Username</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12">
-              <input [(ngModel)]="password" id="password" type="password" class="validate" required>
+              <input [(ngModel)]="password" id="password" type="password" class="validate" name="first" required>
               <label for="password">Password</label>
             </div>
           </div>
