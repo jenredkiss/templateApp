@@ -2,7 +2,7 @@
 
 ## 1. Install angular-cli
 
-command: npm install angular-cli -generate
+command: npm install angular-cli -g
 	
 ## 2. Install all dependencies
 
