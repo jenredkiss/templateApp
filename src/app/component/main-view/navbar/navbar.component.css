@@ -1,0 +1,12 @@
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+.button-collapse {
+  color: #444;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+  color: rgb(238,110,115) !important;
+}

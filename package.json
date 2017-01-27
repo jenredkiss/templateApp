@@ -26,6 +26,9 @@
     "core-js": "^2.4.1",
     "express": "^4.14.0",
     "jquery": "^3.1.1",
+    "jsonwebtoken": "^7.2.1",
+    "materialize-css": "^0.98.0",
+    "morgan": "^1.7.0",
     "rxjs": "^5.0.1",
     "ts-helpers": "^1.1.1",
     "zone.js": "^0.7.2"
