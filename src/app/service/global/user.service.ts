@@ -1,10 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
-
-import { config } from './../../../development/local.config';
-import { User } from './../../model/user.model';
-
 import {Observable} from 'rxjs/Rx';
+
+import { User } from './../../model/user.model';
 
 // Import RxJs required methods
 import 'rxjs/add/operator/map';
@@ -13,12 +11,11 @@ import 'rxjs/add/operator/mergeMap';
 
 @Injectable()
 export class UserService {
-  private apiUrl: string = config.apiUrl;
 
   constructor(private http: Http) { }
 
   authenticate(username, password): Observable<any> {
-    return this.http.post(this.apiUrl + 'authenticate', { name: username, password: password})
+    return this.http.post('/api/authenticate', { name: username, password: password})
                     .map(response => {
                       console.log('Service', response);    
                       return response.json();
@@ -34,7 +31,7 @@ export class UserService {
     }
 
   getUser(options): Observable<User> {
-    return this.http.get(this.apiUrl + 'users', options)
+    return this.http.get('/api/users', options)
                           .map(user => {
                             console.log('USER', user);
                             return user.json();
