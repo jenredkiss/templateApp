@@ -6,7 +6,7 @@
   "apps": [
     {
       "root": "src",
-      "outDir": "dist",
+      "outDir": "app",
       "assets": [
         "assets",
         "favicon.ico"
@@ -19,11 +19,11 @@
       "mobile": false,
       "styles": [
         "styles.css",
-		"../node_modules/bootstrap/dist/css/bootstrap.css"
+		"../node_modules/materialize-css/bin/materialize.css"
       ],
       "scripts": [
-		"../node_modules/jquery/dist/jquery.js",
-		"../node_modules/bootstrap/dist/js/bootstrap.js"
+		"../node_modules/materialize-css/bin/jquery-2.1.1.min.js",
+		"../node_modules/materialize-css/bin/materialize.js"
 	  ],
       "environments": {
         "source": "environments/environment.ts",
